@@ -10,7 +10,7 @@ export async function getWeather(
 } | null> {
   try {
     const res = await axios.get(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&exclude=minutely,daily,alerts`,
+      `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&exclude=minutely,daily,alerts`,
     )
 
     return {
